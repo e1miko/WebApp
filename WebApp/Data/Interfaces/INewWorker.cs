@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApp.Models;
 
 namespace WebApp.Data.Interfaces
 {
     public interface INewWorker
     {
-        IEnumerable<INewWorker> newWorker { get; }
+        IEnumerable<NewWorker> AllWorkers { get; }
     }
 }

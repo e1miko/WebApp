@@ -2,20 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebApp.Data.Interfaces;
 using WebApp.Models;
+using WebApp.Data.Interfaces;
+
 
 namespace WebApp.Data.Mocks
 {
     public class MockWorker : INewWorker
     {
-       
-
-        public IEnumerable<INewWorker> newWorker
-        {
+        public IEnumerable<NewWorker> AllWorkers {
             get
             {
-                return new Add<>
+                return new List<NewWorker>
                 {
                     new NewWorker {Name = "sfh", Surname = "ifhjd"}
                 };

@@ -20,7 +20,7 @@ namespace WebApp.Controllers
         public ViewResult Add(string category)
         {
             category = "";
-            var results = worker.newWorker; //mocka net, potom s db vzjatj
+            var results = worker.AllWorkers; //mocka net, potom s db vzjatj
             return View();
         }
     }
